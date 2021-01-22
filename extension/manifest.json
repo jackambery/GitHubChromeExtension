@@ -1,0 +1,20 @@
+{
+    "name": "Github Nofitication Extension",
+    "description": "Notifies user when commit or pull request is made.",
+    "version": "1.0",
+    "manifest_version": 2,
+    "icons": {
+        "logo": "./gitlogo.png"
+    },
+    "background": {
+        "scripts": ["./background.js"]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs",
+        "https//www.google.com/*"
+    ]
+}
