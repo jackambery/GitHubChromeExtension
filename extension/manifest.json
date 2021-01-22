@@ -4,7 +4,10 @@
     "version": "1.0",
     "manifest_version": 2,
     "icons": {
-        "logo": "./gitlogo.png"
+        "16": "./gitlogo16.png",
+        "32": "./gitlogo32.png",
+        "48": "./gitlogo48.png",
+        "128": "./gitlogo128.png"
     },
     "background": {
         "scripts": ["./background.js"]
@@ -15,6 +18,7 @@
     },
     "permissions": [
         "tabs",
-        "https//www.google.com/*"
+        "*://*/*",
+        "storage"
     ]
 }
