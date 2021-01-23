@@ -20,3 +20,7 @@ second.addEventListener('click', () => {
     chrome.runtime.sendMessage({message: 'yo check the storage'});
     console.log('I SENT THE MESSAGE')
 });
+
+chrome.runtime.onMessage.addListener((request, sender, sendRespnse) => {
+    console.log(request.message)
+});
